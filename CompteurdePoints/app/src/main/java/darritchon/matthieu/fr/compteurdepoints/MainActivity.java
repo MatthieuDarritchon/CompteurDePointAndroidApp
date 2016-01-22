@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         final TextView tvZoneScore1 = (TextView) this.tvZoneScore1.findViewById(R.id.bloc_score_tv_zone_affichage);
         outState.putString(TEAM_1_SCORE, tvZoneScore1.getText().toString());
-        final TextView tvZoneScore2 = (TextView) this.tvZoneScore1.findViewById(R.id.bloc_score_tv_zone_affichage);
+        final TextView tvZoneScore2 = (TextView) this.tvZoneScore2.findViewById(R.id.bloc_score_tv_zone_affichage);
         outState.putString(TEAM_2_SCORE, tvZoneScore2.getText().toString());
         super.onSaveInstanceState(outState);
     }
